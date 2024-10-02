@@ -1,16 +1,31 @@
-public class Car {
-    // Attributes
-    
-    // Constructor
-    
-    // Method to display car information
-    
+// include the necessary libraries
+
+class Car {
+    public:
+        //attributes
+        string make;
+        string model;
+        int year;
+        // Constructor
+        Car(string make, string model, int year);
+        // Method to display car information
+        void displayInfo() { 
+            cout << "Make:" + make;
+            cout << "Model: " + model; 
+            cout << "Year: " + year;
+        }
+};
+
+int main() {
+    // Create a Car object
+    Car car;
+    car.make = "Toyota";
+    car.model = "Yaris"; 
+    car.year = 2020;
     }
 
-    public static void main(String[] args) {
-        // Create a Car object
-        
-        // Display car details
-        
-    }
+    // Display car details
+    Car.displayInfo();
+
+    return 0;
 }
